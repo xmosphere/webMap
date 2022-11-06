@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 var color1 = "#63D471";
 var color2 = "#808080";
+var color3 = "#63A071";
 var NavHeight = "85px";
 
 
@@ -12,6 +13,7 @@ var NavHeight = "85px";
 export const Nav = styled.nav`
     background: ${color1};
     height: ${NavHeight};
+    font-family: 'Roboto';font-size: 22px;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem calc((100vw - 1000px) /2);
@@ -19,7 +21,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    color: ${color2};
+    color: ${color3};
     display: flex;
     align-items left;
     text-decoration: none;
@@ -27,7 +29,11 @@ export const NavLink = styled(Link)`
     height: 100%
     cursor: pointer;
     &.active {
-      color: #000000;
+      color: ${color2};
+    }
+    NavLink.hover {
+      background-color: ${color2};
+      transition: 0.2s;
     }
   `;
     
@@ -85,7 +91,7 @@ export const NavLink = styled(Link)`
     margin-left: 24px;
     &:hover {
       transition: all 0.2s ease-in-out;
-      background: #fff;
+      background: ${color2};
       color: #808080;
     }
   `;

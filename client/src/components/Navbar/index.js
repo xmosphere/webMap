@@ -14,22 +14,29 @@ const Navbar = () => {
         <> <Nav>
             <Bars />
             <NavMenu>
-                <NavLink to='/' >
-                    Home
+                <NavLink to='/userMarker' >
+                    My Markers
                 </NavLink>
-                <NavLink to='/data' >
-                    Data
+                <NavLink to='/addUserMarkers' >
+                    Add Markers
                 </NavLink>
+                {/*<NavLink to='/editUserMarkers' >
+                    Edit Markers
+                </NavLink> */}
                 <NavLink to='/map' >
                     Map
                 </NavLink>
+                {/*
                 <NavLink to='/sign-up' >
                     Sign Up
                 </NavLink>
+                */}
             </NavMenu>
+            {/*
             <NavBtn>
                 <NavBtnLink to='/signin'>Sign In</NavBtnLink>
             </NavBtn>
+            */}
         </Nav> </>
     );
 }
