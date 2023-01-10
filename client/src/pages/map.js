@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import MapComponent from '../components/Map/Map';
 import {SocketContext, socket} from "./../components/SocketIO/socket";
-
 const Map = () => {
-    var output;
+    /*
     useEffect(() => {
-        socket.on("initialData", output);
-    })
-    console.log(output)
+        socket.on('initialData', (data) => console.log(data));
+    }, []);
+    */
     return (
-        <div>
+        <div style={{backgroundColor: "#c0c0c0"}}>
             <MapComponent />
         </div>
     );    
